@@ -3,14 +3,1167 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <link href="./output.css" rel="stylesheet" />
     <title>Prasad Kumar</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <h1 class="text-3xl text-red-500">Prasad Kumar</h1>
+  <body
+    style="font-family: 'Nunito', sans-serif"
+    class="text-slate-700 duration-300 ease-in-out transition-all"
+  >
+    <header class="w-full h-14 md:h-[72px] fixed top-0 left-0 bg-white z-50">
+      <nav
+        class="w-full max-w-5xl mx-auto h-full flex items-center justify-between px-4"
+      >
+        <img src="./assets/logo.svg" alt="logo" class="w-5 h-auto" />
+        <div class="md:hidden flex gap-5" id="hamburger">
+          <div class="flex gap-5">
+            <a
+              href="https://www.linkedin.com/in/k-prasad-kumar"
+              class="hover:text-green-500"
+              target="_blank"
+            >
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="1.4rem"
+                width="1.4rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/k-prasad-kumar"
+              class="hover:text-green-500"
+              target="_blank"
+            >
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="1.4rem"
+                width="1.4rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <ul class="space-x-10 text-sm hidden md:flex">
+          <a
+            href="#"
+            class="hover:text-green-500 duration-300 ease-in-out hover:font-semibold"
+          >
+            <li>Home</li>
+          </a>
+          <a
+            href="#about"
+            class="hover:text-green-500 duration-300 ease-in-out hover:font-semibold"
+          >
+            <li>About</li>
+          </a>
+          <a
+            href="#skills"
+            class="hover:text-green-500 duration-300 ease-in-out hover:font-semibold"
+          >
+            <li>Skills</li>
+          </a>
+          <a
+            href="#projects"
+            class="hover:text-green-500 duration-300 ease-in-out hover:font-semibold"
+          >
+            <li>Projects</li>
+          </a>
+          <a
+            href="#contact"
+            class="hover:text-green-500 duration-300 ease-in-out hover:font-semibold"
+          >
+            <li>Contact</li>
+          </a>
+        </ul>
       </nav>
+      <div
+        class="md:hidden w-full h-12 flex justify-between items-center fixed bottom-0 bg-white z-50 px-5"
+      >
+        <a href="#home">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            height="1.5rem"
+            width="1.5rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            ></path>
+          </svg>
+        </a>
+        <a href="#about">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            height="1.5rem"
+            width="1.5rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            ></path>
+          </svg>
+        </a>
+        <a href="#skills">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            height="1.5rem"
+            width="1.5rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+            ></path>
+          </svg>
+        </a>
+        <a href="#projects">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            height="1.5rem"
+            width="1.5rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+            ></path>
+          </svg>
+        </a>
+        <a href="#contact">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            height="1.5rem"
+            width="1.5rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            ></path>
+          </svg>
+        </a>
+      </div>
     </header>
+    <main
+      class="w-full max-w-5xl mx-auto h-screen flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-5 md:gap-3 lg:gap-5 relative px-4 md:mt-0"
+      id="home"
+    >
+      <div
+        class="w-1/6 h-full hidden md:flex flex-col gap-5 items-center justify-center"
+      >
+        <a
+          href="https://github.com/k-prasad-kumar"
+          class="hover:text-green-500"
+          target="_blank"
+        >
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            height="1.4rem"
+            width="1.4rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/k-prasad-kumar"
+          class="hover:text-green-500"
+          target="_blank"
+        >
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            height="1.4rem"
+            width="1.4rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+            ></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+      <div class="w-full flex items-center justify-center">
+        <img
+          src="./assets/profile.jpg"
+          alt="profile"
+          class="w-48 h-48 md:w-64 md:h-64 border-4 border-green-500 profile-img"
+        />
+      </div>
+      <div
+        class="w-full flex flex-col justify-center text-center md:text-left px-4 md:px-0"
+      >
+        <h1 class="text-4xl md:text-4xl lg:text-6xl text-slate-600">
+          Prasad Kumar
+        </h1>
+        <p class="text-green-500 text-lg mt-1">
+          Full Stack Developer | Next.js
+        </p>
+        <p class="mt-4 text-sm">
+          Hi, I'm Prasad Kumar, a dedicated Full Stack Developer with a focus on
+          the MERN stack and Next.js.
+        </p>
+
+        <div class="w-full flex justify-center md:justify-normal">
+          <a
+            href="#contact"
+            class="bg-[#2c2c2c] text-white w-fit flex items-center justify-center px-8 py-4 rounded-lg font-bold hover:bg-green-500 duration-300 ease-in-out mt-10 md:mt-14 gap-2"
+          >
+            Say Hello
+            <svg
+              class="button__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z"
+                fill="white"
+              ></path>
+              <path
+                d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z"
+                fill="white"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-full justify-center z-50 mb-4 hidden md:flex"
+      >
+        <a href="#about" class="flex gap-2 items-center">
+          <svg
+            width="32px"
+            height="32px"
+            class="home__scroll-mouse"
+            viewBox="0 0 247 390"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 1.5;
+            "
+          >
+            <path
+              class="wheel"
+              d="M123.359,79.775l0,72.843"
+              style="fill: none; stroke: grey; stroke-width: 20px"
+            ></path>
+            <path
+              id="mouse"
+              d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+              style="fill: none; stroke: grey; stroke-width: 20px"
+            ></path>
+          </svg>
+          <span>Scroll Down</span>
+          <svg
+            stroke="grey"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            height="1.4rem"
+            width="1.4rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17 13l-5 5m0 0l-5-5m5 5V6"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </main>
+    <section class="w-full max-w-5xl mx-auto px-5 pt-5" id="about">
+      <h1 class="mt-16 text-3xl font-semibold text-center">About Me</h1>
+      <p class="text-center mt-2">A short introduction</p>
+      <p class="my-6 text-justify">
+        Hi, I'm Prasad Kumar, a dedicated Full Stack Developer with a focus on
+        the MERN stack and Next.js. With a robust background in MongoDB,
+        Express.js, React, Node.js, and Next.js, I specialize in crafting
+        dynamic, high-performance web applications that deliver exceptional user
+        experiences.
+      </p>
+      <ul class="flex gap-3 flex-wrap items-center justify-evenly">
+        <li class="border border-[#444] px-4 py-1 rounded-full">HTML</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">CSS</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">JavaScript</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">TypeScript</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">React.js</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">Mongo DB</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">Node.js</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">Express.js</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">Next.js</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">Redux.js</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">
+          Tailwind CSS
+        </li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">Mongoose</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">Prisma</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">GitHub</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">Java</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">Python</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">DSA</li>
+        <li class="border border-[#444] px-4 py-1 rounded-full">OOPS</li>
+      </ul>
+    </section>
+    <section class="w-full max-w-5xl mx-auto pt-5" id="skills">
+      <h1 class="mt-16 text-3xl font-semibold text-center">Skills</h1>
+      <p class="text-center my-2">Technical Skills</p>
+      <div class="flex items-center justify-center w-full mt-8">
+        <h1 class="text-2xl">Launguages</h1>
+      </div>
+      <div class="mt-4 flex items-center justify-center gap-5 flex-wrap">
+        <div
+          class="px-2 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#E44D26] text-white border px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#E44D26] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            HTML
+          </p>
+          <img
+            src="./assets/html.svg"
+            alt="mongo db"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#E44D26] font-bold mt-2">
+            HTML
+          </h2>
+        </div>
+        <div
+          class="px-2 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#264DE4] text-white border px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#264DE4] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            CSS
+          </p>
+          <img
+            src="./assets/css.svg"
+            alt="mongo db"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#264DE4] font-bold mt-2">
+            CSS
+          </h2>
+        </div>
+        <div
+          class="px-2 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#f7df1e] text-white border px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#f7df1e] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            JavaScript
+          </p>
+          <img
+            src="./assets/js.svg"
+            alt="mongo db"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#f7df1e] font-bold mt-2">JS</h2>
+        </div>
+        <div
+          class="px-2 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#3178c6] text-white border px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#3178c6] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            TypeScript
+          </p>
+          <img
+            src="./assets/ts.svg"
+            alt="mongo db"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#3178c6] font-bold mt-2">TS</h2>
+        </div>
+        <div
+          class="px-2 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#e76f00] text-white border px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#e76f00] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            Java
+          </p>
+          <img
+            src="./assets/java.svg"
+            alt="mongo db"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#e76f00] font-bold mt-2">
+            Java
+          </h2>
+        </div>
+        <div
+          class="px-2 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#3178c6] text-white border px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#3178c6] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            Python
+          </p>
+          <img
+            src="./assets/python.svg"
+            alt="mongo db"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#3178c6] font-bold mt-2">Py</h2>
+        </div>
+      </div>
+      <div class="flex items-center justify-center w-full mt-10">
+        <h1 class="text-2xl">MERN Stack | Frameworks</h1>
+      </div>
+
+      <div class="flex items-center w-full justify-center mt-4 gap-5 flex-wrap">
+        <div
+          class="px-2 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#47a248] text-white border px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#47a248] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            MongoDB
+          </p>
+          <img
+            src="./assets/mongodb.svg"
+            alt="mongo db"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#47a248] font-bold mt-2">M</h2>
+        </div>
+        <div
+          class="px-3 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-slate-800 text-white px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-slate-800 after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            Express.JS
+          </p>
+          <img
+            src="./assets/express.svg"
+            alt="expressjs"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-slate-700 font-semibold mt-2">
+            E
+          </h2>
+        </div>
+        <div
+          class="px-3 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#61dafb] text-white px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#61dafb] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            React.JS
+          </p>
+          <img
+            src="./assets/react.svg"
+            alt="reactjs"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#61dafb] font-semibold mt-2">
+            R
+          </h2>
+        </div>
+        <div
+          class="px-3 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#8cc84b] text-white px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#8cc84b] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            Node.JS
+          </p>
+          <img
+            src="./assets/node.svg"
+            alt="nodejs"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#8cc84b] font-bold mt-2">N</h2>
+        </div>
+        <div class="px-4 hidden md:flex">|</div>
+        <div class="px-4 md:hidden w-full text-center">____</div>
+
+        <div
+          class="px-3 relative flex flex-col items-center justify-center group"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-black text-white px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-black after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            Next.JS
+          </p>
+          <img
+            src="./assets/next.svg"
+            alt="next js"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-black mt-2">Next JS</h2>
+        </div>
+        <div
+          class="px-3 relative flex flex-col items-center justify-center group"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#0ED7B5] text-white px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#0ED7B5] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            Tailwind_CSS
+          </p>
+          <img
+            src="./assets/tailwind.svg"
+            alt="next js"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#0ED7B5] mt-2">Tw</h2>
+        </div>
+        <div
+          class="px-3 relative flex flex-col items-center justify-center group"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#00B0FF] text-white px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#00B0FF] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            Material_UI
+          </p>
+          <img
+            src="./assets/material-ui.svg"
+            alt="next js"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#00B0FF] mt-2">MUI</h2>
+        </div>
+      </div>
+      <div class="flex items-center justify-center w-full mt-10">
+        <h1 class="text-2xl">Developer Tools</h1>
+      </div>
+
+      <div class="flex items-center w-full justify-center mt-4 gap-5 flex-wrap">
+        <div
+          class="px-3 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#3E75C3] text-white px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#3E75C3] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            GitHub
+          </p>
+          <img
+            src="./assets/github.svg"
+            alt="prisma"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#3E75C3] font-bold mt-2">
+            GitHub
+          </h2>
+        </div>
+        <div
+          class="px-3 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#764ABC] text-white px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#764ABC] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            Redux.JS
+          </p>
+          <img
+            src="./assets/redux.svg"
+            alt="reactjs"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#764ABC] font-semibold mt-2">
+            Redux
+          </h2>
+        </div>
+        <div
+          class="px-3 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#0c344b] text-white px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#0c344b] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            Prisma_ORM
+          </p>
+          <img
+            src="./assets/prisma.svg"
+            alt="prisma"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#0c344b] font-bold mt-2">
+            Prisma
+          </h2>
+        </div>
+        <div
+          class="px-3 relative flex flex-col items-center justify-center group my-5"
+        >
+          <p
+            class="absolute top-2 left-1/2 -translate-x-1/2 w-fit bg-[#850000] text-white px-4 py-2 rounded-full after:content-[''] after:w-4 after:h-4 after:bg-[#850000] after:absolute after:top-8 after:right-1/2 after:translate-x-1/2 after:rotate-45 group-hover:-top-14 group-hover:ease-jump group-hover:duration-300 invisible group-hover:visible"
+          >
+            Mongoose.js
+          </p>
+          <img
+            src="./assets/mongoose.svg"
+            alt="prisma"
+            class="w-auto h-14 p-0 m-0"
+          />
+          <h2 class="text-center text-2xl text-[#850000] font-bold mt-2">
+            Mongoose
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- latest works start -->
+    <section
+      class="max-w-screen-xl mx-auto pb-4 relative pt-16 mt-16"
+      id="projects"
+    >
+      <div class="w-full flex items-center justify-center h-20 mx-auto mb-5">
+        <h1
+          class="text-4xl font-bold border-b-2 border-green-500 p-4 bg-white z-10"
+        >
+          Latest Works
+        </h1>
+      </div>
+      <!-- 1st project -->
+      <div
+        class="w-full flex flex-col md:flex-row items-center justify-between mb-5"
+      >
+        <div
+          class="w-full md:w-1/2 flex flex-col md:flex-row items-center relative mb-5"
+        >
+          <div
+            class="absolute bg-green-500 left-1/2 top-1/2 right-0 h-[1px] hidden md:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] bg-green-500 border-green-500 absolute -right-2 top-1/2 -translate-y-1/2 z-10 hidden md:block"
+          ></div>
+          <a
+            href="https://flameit.vercel.app"
+            target="_blank"
+            class="group relative"
+          >
+            <p
+              class="absolute right-1/3 -translate-y-1/2 top-1/2 group-hover:right-1/3 group-hover:-top-1 ease-jump duration-300 px-6 py-2 bg-green-500 text-white rounded-md hidden md:block"
+            >
+              <span
+                class="flex gap-1 items-center after:content-[''] after:w-4 after:h-4 after:bg-green-500 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:rotate-45"
+              >
+                FlameIt
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </p>
+            <img
+              src="./assets/flameit.webp"
+              alt="project"
+              class="max-w-[300px] lg:max-w-[300px] drop-shadow-[0_0px_40px_rgba(0,201,81,0.2)] py-6 sm:py-8 md:py-10 lg:py-14 cursor-pointer hover:scale-105"
+              width="400"
+            />
+          </a>
+          <a
+            href="https://flameit.vercel.app"
+            target="_blank"
+            class="block md:hidden"
+          >
+            <p
+              class="flex gap-1 items-center px-6 py-2 bg-green-500 text-white rounded-md"
+            >
+              FlameIt
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </p>
+          </a>
+        </div>
+        <div
+          class="w-full md:w-1/2 h-full px-8 py-5 md:pl-8 lg:pl-14 space-y-3"
+        >
+          <h2
+            class="text-4xl font-bold text-green-500 text-center md:text-left"
+          >
+            FlameIt
+          </h2>
+          <p
+            class="text-xl font-semibold text-green-500 text-center md:text-left"
+          >
+            (Social Media Platform)
+          </p>
+          <p class="text-lg">
+            Flameit is your vibrant community for sharing photos and stories.
+            Connect with friends, discover new creators, and let your passions
+            ignite.
+          </p>
+          <div class="flex flex-wrap w-full gap-4 my-4">
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">HTML</p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">CSS</p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              TypeScript
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">Next JS</p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              MERN Stack
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              React JS
+            </p>
+
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              Node JS JS
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              Express JS
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              Mongo DB
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              Tailwind CSS
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">Prisma</p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              Cloudinary
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              Socket.io
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">PWA</p>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd project -->
+      <div
+        class="w-full flex flex-col-reverse md:flex-row items-center justify-between mb-5"
+      >
+        <div
+          class="w-full md:w-1/2 h-full px-8 py-5 md:pl-8 lg:pl-14 space-y-3"
+        >
+          <h2
+            class="text-4xl font-bold text-green-500 text-center md:text-left"
+          >
+            TrustKart
+          </h2>
+          <p
+            class="text-xl font-semibold text-green-500 text-center md:text-left"
+          >
+            (Ecommerce)
+          </p>
+          <p class="text-lg">
+            Trustkart is a robust eCommerce platform designed to provide a
+            seamless online shopping experience.
+          </p>
+          <div class="flex flex-wrap w-full gap-4 my-4">
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">HTML</p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">CSS</p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              TypeScript
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">Next JS</p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              Mongo DB
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              Tailwind CSS
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">Prisma</p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">Stripe</p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">
+              Cloudinary
+            </p>
+            <p class="border-[1px] rounded-full px-4 py-1 min-w-fit">Zod</p>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-1/2 flex flex-col md:flex-row items-center justify-end relative mb-5"
+        >
+          <div
+            class="absolute bg-green-500 right-1/2 top-1/2 left-0 h-[1px] hidden md:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] bg-green-500 border-green-500 absolute -left-2 top-1/2 -translate-y-1/2 z-10 hidden md:block"
+          ></div>
+          <a
+            href="https://trustkart.vercel.app"
+            target="_blank"
+            class="group relative"
+          >
+            <p
+              class="absolute right-1/3 -translate-y-1/2 top-1/2 group-hover:right-1/3 group-hover:-top-1 ease-jump duration-300 px-6 py-2 bg-green-500 text-white rounded-md hidden md:block"
+            >
+              <span
+                class="flex gap-1 items-center after:content-[''] after:w-4 after:h-4 after:bg-green-500 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:rotate-45"
+              >
+                TrustKart
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </p>
+            <img
+              src="./assets/trustkart.webp"
+              alt="project"
+              class="max-w-[300px] lg:max-w-[400px] drop-shadow-[0_0px_40px_rgba(0,201,81,0.2)] py-6 sm:py-8 md:py-10 lg:py-14 cursor-pointer hover:scale-105"
+              width="400"
+            />
+          </a>
+          <a
+            href="https://trustkart.vercel.app"
+            target="_blank"
+            class="block md:hidden"
+          >
+            <p
+              class="flex gap-1 items-center px-6 py-2 bg-green-500 text-white rounded-md"
+            >
+              TrustKart
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </p>
+          </a>
+        </div>
+      </div>
+      <div
+        class="absolute w-[2px] bg-green-500 top-[72px] bottom-0 left-1/2 hidden md:block"
+      ></div>
+    </section>
+
+    <!-- contact us section -->
+    <section class="max-w-5xl mx-auto pb-4 relative" id="contact">
+      <div class="w-full flex items-center justify-center">
+        <h2 class="text-4xl font-bold border-t border-green-500 p-4 z-10">
+          Let's Connect
+        </h2>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-center items-center max-w-screen-xl mx-auto my-10"
+      >
+        <div class="w-full md:w-1/2 gap-4 mb-14 md:mb-0">
+          
+          <div class="px-5 space-y-4 flex flex-wrap">
+            <div class="flex flex-col items-center justify-center shadow rounded-xl border border-slate-300 p-4 w-full hover:bg-green-50">
+              <div class="flex items-center justify-center gap-3">
+                <img src="/assets/email.svg" alt="email" class="w-8 h-auto">
+                <span class="text-xl">Email</span>
+              </div>
+              <p class="mt-3">kprasadkumar7@gmail.com</p>
+              <a href="mailto:kprasadkumar7@gmail.com" target="_blank" class="hover:text-green-500 font-bold py-2"> Write me-></a>
+            </div>
+            <div class="flex flex-col items-center justify-center shadow rounded-xl border border-slate-300 p-4 w-full hover:bg-green-50">
+              <div class="flex items-center justify-center gap-3">
+                <img src="/assets/twitter.svg" alt="email" class="w-8 h-auto">
+                <span class="text-xl">Twitter</span>
+              </div>
+              <p class="mt-3">Prasad Kumar</p>
+              <a href="https://x.com/k_prasad_kumar" target="_blank" class="hover:text-green-500 font-bold py-2">Write me -></a>
+            </div>
+            <div class="flex flex-col items-center justify-center shadow rounded-xl border border-slate-300 p-4 w-full hover:bg-green-50">
+              <div class="flex items-center justify-center gap-3">
+                <img src="/assets/telegram.svg" alt="email" class="w-8 h-auto">
+                <span class="text-xl">Telegram</span>
+              </div>
+              <p class="mt-3">Prasad Kumar</p>
+              <a href="https://t.me/prasad_kumar" target="_blank" class="hover:text-green-500 font-bold py-2">Write me-></a>
+            </div>
+            <div class="flex flex-col items-center justify-center shadow rounded-xl border border-slate-300 p-4 w-full hover:bg-green-50">
+              <div class="flex items-center justify-center gap-3">
+                <img src="/assets/discord.svg" alt="email" class="w-8 h-auto">
+                <span class="text-xl">Discord</span>
+              </div>
+              <p class="mt-3">Prasad Kumar</p>
+              <a href="https://discordapp.com/users/prasad_kumar" target="_blank" class="hover:text-green-500 font-bold py-2">Write me-></a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 space-y-4 px-5" name="contact">
+
+        <h2 class="text-xl font-semibold text-center">What&apos;s Up?</h2>
+        <form class="w-full space-y-4" netlify>
+          <label for="name" class="block gap-2 text-lg"> Full Name </label>
+          <div class="relative">
+            <svg
+              class="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"
+              ></path>
+            </svg>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full py-3 pl-10 pr-4 rounded-sm outline-none focus:ring-green-500 focus:ring-2 focus:shadow-green-500 border-slate-300 border focus:border-green-500"
+              placeholder="Enter your name"
+            />
+          </div>
+          <label for="email" class="block gap-2 text-lg"> Your Email </label>
+          <div class="relative">
+            <svg
+              class="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 16"
+            >
+              <path
+                d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+              ></path>
+              <path
+                d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+              ></path>
+            </svg>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full py-3 pl-10 pr-4 rounded-sm outline-none focus:ring-green-500 focus:ring-2 focus:shadow-green-500  border border-slate-300 focus:border-green-500"
+              placeholder="name@email.com"
+            />
+          </div>
+          <label for="message" class="block gap-2 text-lg"> Message </label>
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            rows="7"
+            class="w-full py-2 px-4 rounded-sm outline-none focus:ring-green-500 focus:ring-2 focus:shadow-green-500 border-slate-300 border focus:border-green-500"
+          ></textarea>
+          <button
+            type="submit"
+            class="px-4 py-3 bg-green-500 w-full mt-5 flex items-center justify-center gap-3 rounded-sm hover:scale-[1.02] duration-300 ease-in-out text-white cursor-pointer"
+          >
+              <svg
+              class="button__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z"
+                fill="white"
+              ></path>
+              <path
+                d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z"
+                fill="white"
+              ></path>
+            </svg>
+            </span>
+            Send message
+          </button>
+        </form>
+      </div>
+      </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto py-14 mb-14 flex flex-col items-center justify-center">
+     <img src="/assets/logo.svg" alt="logo" class="w-14 h-auto">
+      <div class="flex gap-10 md:gap-14 items-center justify-center mt-8">
+        <a
+              href="https://www.linkedin.com/in/k-prasad-kumar"
+              class="hover:text-green-500"
+              target="_blank"
+            >
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="1.4rem"
+                width="1.4rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/k-prasad-kumar"
+              class="hover:text-green-500"
+              target="_blank"
+            >
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="1.4rem"
+                width="1.4rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/its_me_prasad"
+              class="hover:text-green-500"
+              target="_blank"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+
+            <a
+              href="https://x.com/k_prasad_kumar"
+              class="hover:text-green-500"
+              target="_blank"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter">
+              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+
+        <a href="mailto:kprasadkumar7@gmail.com"
+        class="hover:text-green-500"
+        target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+
+      </div>
+      <p class="text-center mt-4">Prasad kumar ©2025</p>
+    </section>
   </body>
 </html>
